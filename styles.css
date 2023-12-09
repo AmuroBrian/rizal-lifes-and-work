@@ -1,0 +1,163 @@
+* {
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    /* background: #1d2127; */
+    /* background: rgb(131,58,180);
+    background: linear-gradient(135deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); */
+
+    background: rgb(0,50,255);
+    background: linear-gradient(129deg, rgba(0,50,255,1) 0%, rgba(238,0,0,1) 50%, rgba(234,246,10,1) 100%);
+}
+
+.header {
+    width: 100%;
+    height: 15vh;
+    color: white;
+    display: flex;
+    position: relative;
+}
+
+.body {
+    display: flex;
+    width: 100vw;
+    height: 85vh;
+}
+
+.logo {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#rizal_logo {
+    height: 100%;
+}
+
+.title {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-left: 5%;
+}
+
+.menu__container {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.bar__container {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.bar {
+    width: 20%;
+    border: 2px solid white;
+}
+
+.quote__container {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+    padding-left: 5%;
+}
+
+.rizal {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rizal {
+    width: 35vw;
+}
+
+.quote {
+    width: 100%;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button__container {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#start__button {
+    width: 30%;
+    height: 50%;
+    border-radius: 25px;
+    border: 5px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#start__button:hover {
+    box-shadow: 0px 0px 25px white;
+    text-shadow: 0px 0px 25px white;
+    font-weight: 900;
+}
+
+@media screen and (max-width: 700px){
+    #rizal_logo {
+        display: none;
+    }
+    .logo {
+        display: none;   
+    }
+    .rizal {
+        display: none;
+    }
+    .title {
+        width: 70vw;
+    }
+    .menu__container {
+        width: 30vw;
+
+    }
+    .bar__container {
+        width: 100%;
+    }
+    .quote__container {
+        width: 100vw;
+    }
+
+    #start__button {
+        width: 50%;
+    }
+}
