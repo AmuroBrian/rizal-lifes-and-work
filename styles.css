@@ -66,14 +66,23 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 5px;
     align-items: center;
     justify-content: center;
 }
 
 .bar {
-    width: 20%;
+    width: 100%;
     border: 2px solid white;
+}
+
+#bar {
+    width: 20%;
+    height: 30%;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .quote__container {
@@ -153,8 +162,16 @@
     .bar__container {
         width: 100%;
     }
+
+    .body {
+        display: flex;
+        justify-content: center;
+    }
     .quote__container {
+        padding: 0;
         width: 100vw;
+        display: flex;
+        justify-content: center;
     }
 
     #start__button {
