@@ -68,6 +68,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 5px;
 }
 
 .bar {
@@ -83,6 +84,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: relative;
 }
 
 .quote__container {
@@ -102,6 +104,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 #rizal {
@@ -140,6 +143,82 @@
     box-shadow: 0px 0px 25px white;
     text-shadow: 0px 0px 25px white;
     font-weight: 900;
+}
+
+#bar:hover #bar2{
+    display: none;
+}
+#bar:hover #bar1 {
+    transform-origin: center;
+    animation: rotate45 ease 1s;
+    position: absolute;
+    transform: rotate(-45deg);
+}
+#bar:hover #bar3 {
+    transform-origin: center;
+    animation: rotate45-reverse ease 1s;
+    transform: rotate(45deg);
+}
+
+.menu {
+    position: absolute;
+    right: 5%;
+    width: 30vw;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid white;
+    border-radius: 25px;
+    color: white;
+    font-size: 1rem;
+    padding: 25px 0;
+    font-weight: 900;
+    top: 100%;
+    overflow: hidden;
+}
+
+#bar:hover .menu {
+    display: flex;
+    animation: lenAnim 1s ease;
+    height: 100px;
+}
+
+.menu__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+li:hover {
+    text-shadow: 0px 0px 25px white;
+}
+
+@keyframes rotate45 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-45deg);
+    }
+}
+
+@keyframes rotate45-reverse {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes lenAnim {
+    from {
+        height: 0;
+    }
+    to {
+        height: 100px;
+    }
 }
 
 @media screen and (max-width: 700px){
